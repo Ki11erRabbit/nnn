@@ -5029,7 +5029,7 @@ static void show_help(const char *path)
 	       "9o ^O  Open with%-15cl  Create new/link\n"
 	       "9f ^F  File stats%-14cd  Detail mode toggle\n"
 		 "b^R  Rename/dup%-14cr  Batch rename\n"
-		  "cz  Archive%-14cD ^e  Edit file\n"
+		  "cz  Archive%-14cD ^E  Edit file\n"
 		  "c*  Toggle exe%-14c>  Export list\n"
 	   "5Space ^J  (Un)select%-12cM-M  Select range/clear\n"
 	          "ca  Select all%-14cA  Invert sel\n"
