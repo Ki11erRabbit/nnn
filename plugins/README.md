@@ -32,6 +32,7 @@ Plugins extend the capabilities of `nnn`. They are _executable_ scripts (or bina
 | [gitroot](gitroot) | Cd to the root of current git repo | sh | git |
 | [gpge](gpge) | Encrypt/decrypt files using GPG [✓] | sh | gpg |
 | [gutenread](gutenread) | Browse, download, read from Project Gutenberg | sh | curl, unzip, w3m<br>[epr](https://github.com/wustho/epr) (optional) |
+| [gsconnect](gsconnect) | GNOME's implementation of kdeconnect [✓] | sh | gsconnect |
 | [imgresize](imgresize) | Batch resize images in dir to screen resolution | sh | [imgp](https://github.com/jarun/imgp) |
 | [imgur](imgur) | Upload an image to imgur (from [imgur-screenshot](https://github.com/jomo/imgur-screenshot)) | bash | - |
 | [imgview](imgview) | View (thumbnail)images, set wallpaper, [rename](https://github.com/jarun/nnn/wiki/Basic-use-cases#browse-rename-images) and [more](https://wiki.archlinux.org/index.php/Sxiv#Assigning_keyboard_shortcuts)| sh | _see in-file docs_ |
@@ -209,6 +210,7 @@ When `nnn` executes a plugin, it does the following:
     2. `$2`: The working directory (might differ from `$PWD` in case of symlinked paths; non-canonical).
     3. `$3`: The picker mode output file (`-` for stdout) if `nnn` is executed as a file picker.
 - Sets the environment variable `NNN_PIPE` used to control `nnn` active directory.
+- Sets the environment variable `NNN_INCLUDE_HIDDEN` to `1` if hidden files are active, `0` otherwise.
 - Exports the [special variables](https://github.com/jarun/nnn/wiki/Concepts#special-variables).
 
 Plugins can also read the `.selection` file in the config directory.
